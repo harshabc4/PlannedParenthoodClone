@@ -26,10 +26,14 @@ body {
 
 body * {
   /* border: 1px solid green; */
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-weight: 700;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
 
 /******************************************
 /* LAYOUT
@@ -43,78 +47,163 @@ header {
 
   align-items: center;
   justify-content: right;
-  height: 2rem;
-  max-width: 75rem;
+  /* height: 2rem; */
+  height: auto;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .language-bar-wrapper {
   background: white;
-  padding: 0.3rem;
+  /* padding: 0.29rem; */
+  height: auto;
 
 }
 
 .language {
-  margin-right: 1.25rem;
+  margin-right: 1rem;
   display: flex;
+  font-size: 0.7rem;
+  padding: .925rem 0em;
 
   
 }
 
 .logo-wrapper {
-  display: block;
-  width: 20%;
-  justify-content: space-between;
-  margin-right: auto;
+  display: flex;
+  /* width: 20%; */
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
+  /* margin-right: auto; */
+  height: auto;
   /* margin: 0 auto 0 0; */
   /* margin-right: auto;
   margin-left: 20%; */
 }
 
+.logo {
+  justify-self: flex-start;
+  display: flex;
+  width: 220px;
+  height: 27.6167px;
+}
+
 .nav-wrapper {
   /* min-width: 100%; */
+  display: flex;
+  margin: auto;
   background: #00286e;
-  padding: 0.30rem;
+  /* height: 100%; */
+  height: 82px;
+
 }
 
 nav {
   /* min-width: 80%; */
   margin-right: auto;
-  max-width: 75rem;
+  max-width: 1200px;
+  padding-right: 20px;
+padding-left: 20px;
   /* margin-right: 20%; */
   /* margin-left: 20%; */
   margin-left: auto;
   display: flex;
   justify-content: flex-end;
-  font-size: 1.1rem;
-  padding: 1rem 0;
+  font-size: 1rem;
+  /* padding: 1rem 0; */
+  /* min-height: 2rem; */
   color: #ffffff;
   text-transform: uppercase;
+  /* height: 100%; */
+  width: 100%;
+  /* max-width: 70rem; */
 }
 
 .nav-list {
   /* margin-right: 20%; */
-  width: fit-content;
+  /* width: fit-content; */
+  width: 100%;
+  height: 100%;
 }
 
 ul {
   display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  
 }
 
 li {
   display: flex;
-  justify-content: flex-end;
-  padding: 0.75rem  1.25rem;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0.75rem  1.25rem; */
+  padding: 0px 12px 0px 11px;
+  height: 100%;
+}
+
+li * {
+  
+  font-weight: bold;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+ul li span {
+  padding-right: 2px;
+}
+
+.learn-button {
+  
+}
+
+.get-involved-button {
+  padding-right: 8px;
+  padding-left: 15px;
+}
+
+.donate-button {
+  padding: 14px 16.8px;
+  /* margin-right: 2px; */
+  justify-self: center;
+  border-radius: 25px;
+  border:  solid #00286e;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  background: #2895d5;
+}
+
+.search-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  /* background: white; */
+}
+
+.search-button {
+  padding: 0 1px;
 }
 
 .news-and-main-container {
   position: absolute;
-  top: 7.75rem;
+  top: 7.71rem;
 }
 
 .news-banner {
+  padding: 40px 0;
   display: flex;
-  height: 14rem;
+  /* height: 13.9rem; */
+  min-height: calc(100vh - 380px);
   background: #2895d5;
   color: white;
 }
@@ -128,11 +217,14 @@ li {
 }
 
 .news-article-container {
-  width: 100%;
+  width: 58.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   /* max-width: 75rem; */
   /* margin-left: 20%; */
   /* margin: 0 auto; */
-  padding: 2.75rem 0;
+  /* padding: 2.75rem 0; */
 }
 
 .news-button {
@@ -150,13 +242,20 @@ li {
 
 h1 {
   width: 35rem;
-  font-size: 2rem;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: 900;
+}
+
+.h1-container {
+  height: fit-content;
 }
 
 .news-article-container p {
   width: 40rem;
-  line-height: 1.5rem;
-  margin: 1rem 0;
+  line-height: 1.5;
+  margin-top: 10px;
+  /* margin: 1rem 0; */
   font-weight: 100;
   font-size: 1.25rem;
 }
@@ -169,6 +268,7 @@ h1 {
   height: 100%;
   align-items: center;
   justify-content: right;
+  width: 33.333333%
   /* justify-content: flex-end; */
 }
 
@@ -207,4 +307,21 @@ footer {
   transform: translateY(-8.25rem);
   box-shadow: none;
 
+}
+
+.arrow {
+  font-size: 13px;
+  border: solid white;
+  border-width: 0 3.5px 3.5px 0;
+  display: inline-block;
+  padding: 0.25em;
+  margin-left: 0.5em;
+  position: relative;
+  top: -3px;
+  /* margin: 1em; */
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }

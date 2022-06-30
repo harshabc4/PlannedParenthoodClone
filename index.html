@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Planned Parenthood | Clone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800;900&display=swap" rel="stylesheet"> 
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap" rel="stylesheet">  -->
     <link href="/css/reset.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 
@@ -19,20 +22,39 @@
             <div class="scroll-bar">
                 <div class="language-bar-wrapper">
                     <div class="language-bar">
-                        <span class="language">Espanol</span>
+                        <span class="language">Español</span>
                     </div>
                 </div>
                 <div class="nav-wrapper">
                     <nav>
-                        <div class="logo-wrapper">
-                            <img src="#">
-                        </div>
+                        <a href="#" class="logo-wrapper">
+                            <img class="logo" src="/assets/planned-parenthood-horizontal.svg">
+                        </a>
                         <ul class="nav-list">
-                            <li>Learn</li>
-                            <li>Get Care</li>
-                            <li>Get Involved</li>
-                            <li>Donate</li>
-                            <li>Search</li>
+                            <li class="learn-button">
+                                <a href="#" aria-expanded="false" aria-controls="LearnDesktopDropdown"><span>Learn</span><i class="arrow down"></i></a>
+                                <div id="LearnDesktopDropdown"></div>
+                            </li>
+                            <li>
+                                <a href="#" aria-expanded="false" aria-controls="LearnDesktopDropdown"><span>Get Care</span><i class="arrow down"></i></a>
+                                <div id="LearnDesktopDropdown"></div>
+                            </li>
+                            <li class="get-involved-button">
+                                <a href="#" aria-expanded="false" aria-controls="LearnDesktopDropdown"><span>Get Involved</span><i class="arrow down"></i></a>
+                                <div id="LearnDesktopDropdown"></div>
+                            </li>
+                            <li><a class="donate-button" href="#"><span>Donate</span></a></li>
+                            <li class="search-button"><a href="#" aria-expanded="false" aria-controls="SearchDesktopDropdown">
+                                <!-- <svg class=""icon>
+                                    <title>Open Search</title>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/icons/sprite.svg#search-heavy">
+                                        <symbol id="search-heavy" viewBox="0 0 88.49 88.49" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M88.49 78.49L85 75 64.24 54.24a35 35 0 10-10 10l21.63 21.63 2.61 2.61zM35 60a25 25 0 1125-25 25 25 0 01-25 25z" fill="currentColor">
+                                            </path>
+                                        </symbol>
+                                    </use>
+                                </svg> -->
+                                <span class="search-span"><img class="search-icon" src="assets/searchwhite.png">Search</span></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -42,7 +64,9 @@
             <div class="news-banner">
                 <div class="news-container">
                     <div class="news-article-container">
-                            <h1>Supreme Court Allows States to Ban Abortion, Roe v. Wade Overturned</h1>
+                            <div class="h1-container">
+                                <h1>Supreme Court Allows States to Ban Abortion, Roe v. Wade Overturned</h1>
+                            </div>
                             <p>Confused about new laws that change how and where you can get safe, legal abortion?  We're here for you.</p>
                     </div>
                     
