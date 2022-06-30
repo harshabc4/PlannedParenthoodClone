@@ -208,36 +208,3 @@ footer {
   box-shadow: none;
 
 }
-
-.points-wrapper {
-  height: 100vh;
-}
-
-.point {
-  width: 5rem;
-  height: 5rem;
-}
-
-.point-1 {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.point-2 {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.point-3 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.point-4 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
