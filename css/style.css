@@ -203,7 +203,7 @@ ul li span {
   padding: 40px 0;
   display: flex;
   /* height: 13.9rem; */
-  min-height: calc(100vh - 380px);
+  /* min-height: calc(100vh - 380px); */
   background: #2895d5;
   color: white;
 }
@@ -221,6 +221,7 @@ ul li span {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 20px;
   /* max-width: 75rem; */
   /* margin-left: 20%; */
   /* margin: 0 auto; */
@@ -228,7 +229,7 @@ ul li span {
 }
 
 .news-button {
-  margin: 1rem;
+  /* margin: 1rem; */
   height: 3rem;
   /* margin: 0 20% 0 auto; */
   justify-self: center;
@@ -242,7 +243,7 @@ ul li span {
 
 h1 {
   width: 35rem;
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   line-height: 2.25rem;
   font-weight: 900;
 }
@@ -252,12 +253,12 @@ h1 {
 }
 
 .news-article-container p {
-  width: 40rem;
+  /* width: 40rem; */
   line-height: 1.5;
   margin-top: 10px;
   /* margin: 1rem 0; */
   font-weight: 100;
-  font-size: 1.25rem;
+  font-size: 1.22rem;
 }
 
 .button-container {
@@ -267,16 +268,22 @@ h1 {
   width: 100%;
   height: 100%;
   align-items: center;
+  margin-left: auto;
   justify-content: right;
-  width: 33.333333%
+  width: 33.333333%;
+  padding: 0 20px;
   /* justify-content: flex-end; */
 }
 
 .news-button {
-width: 150px;
+  /* display: flex; */
+/* width: 150px; */
+/* padding: 5px; */
+padding: 14px 24px;
+height: auto;
+font-weight: 900;
 /* display: flex; */
 text-align: center;
-
 /* padding: auto; */
 /* margin: 5rem auto; */
 /* margin: 20%; */
@@ -292,6 +299,12 @@ footer {
 
 .hidden {
   display: none;
+}
+
+.repositioned {
+  transition-timing-function: ease-in;
+  transition: 0.2s;
+  transform: translateY(110px);
 }
 
 .scroll-bar {
@@ -324,4 +337,37 @@ footer {
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+
+
+.fade-in {
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+   -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+       animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
