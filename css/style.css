@@ -282,10 +282,32 @@ text-align: center;
  min-width: 100vw;
  background: white;
  min-height: 20rem;
+
+ transform: scaleY(0);    
+ transform-origin: top;
+ transition: opacity 300ms ease-in-out, transform 0.2s ease-out;
+
+ opacity: 0;
+
+/* 
+ opacity: 0;
+ transform: translateY(0px);
+transition: opacity 300ms ease-in-out, transform 300ms ease-in-out; */
+
  /* border: 1px solid black; */
- 
+}
+
+.has-dropdown:hover .learn-desktop-dropdown{
+  /* opacity: 1;
+  transform: translateY(123px);
+  pointer-events: auto; */
+  transform: scaleY(1);
+  opacity: 1;
+  
 
 }
+
+
 
 .full-width-learn-dropdown-wrapper{
   margin: 30px auto;

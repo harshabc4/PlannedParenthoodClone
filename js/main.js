@@ -36,7 +36,7 @@ function learnDesktopDropdownShow(){
 
 function learnDesktopDropdownHide(){
     learnBtn.classList.remove('open');
-    deskDrop.classList.add('hidden')
+   //  deskDrop.classList.add('hidden')
     main.classList.remove('repositioned')
 }
 
