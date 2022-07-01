@@ -7,7 +7,7 @@
     <title>Planned Parenthood | Clone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;700;800;900&display=swap" rel="stylesheet"> 
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap" rel="stylesheet">  -->
@@ -16,58 +16,182 @@
 
 </head>
 <body>
-    
+    <!-- Full content women's reproductive rights (wrr) wrapper -->
     <div id="wrr-wrapper" class="">
         <header>
+            <!-- Wrapper for nav bar for animations (does not include news banner) -->
             <div class="scroll-bar">
+                <!-- Language bar to hold button for translating page -->
                 <div class="language-bar-wrapper">
                     <div class="language-bar">
                         <span class="language">Español</span>
                     </div>
                 </div>
+                <!-- Navigation bar -->
                 <div class="nav-wrapper">
                     <nav>
                         <a href="#" class="logo-wrapper">
                             <img class="logo" src="/assets/planned-parenthood-horizontal.svg">
                         </a>
                         <ul class="nav-list">
-                            <li class="learn-button">
-                                <a href="#" aria-expanded="false" aria-controls="LearnDesktopDropdown"><span>Learn</span><i class="arrow down"></i></a>
-                                <div id="LearnDesktopDropdown" class="hidden">
+                            <!-- Learn Button -->
+                            <li class="learn-button nav-button has-dropdown">
+                                <a href="#" aria-expanded="false" aria-controls="learn-desktop-dropdown" role="dropdownmenu">
+                                    <span class="nav-button-text">Learn</span>
+                                    <i class="arrow down"></i>
+                                </a>
+                                <div class="learn-desktop-dropdown hidden ease-in">
                                     <div class="full-width-learn-dropdown-wrapper">
                                         <div class="learn-dropdown-container">
-                                            <ul>
-                                                <li>asdf</li>
+                                            <ul class="learn-dropdown-ul">
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Blog</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Abortion</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Ask the Experts</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Birth Control</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Cancer</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>COVID-19</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Emergency Contraception</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Health and Wellness</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Pregnancy</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Sex, Pleasure, and Sexual Dysfunction</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Sexual Orientation</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Gender Identity</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Relationships</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Consent and Sexual Assault</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Sexually Transmitted Infections (STDs)</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Glossary A - Z</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>For Teens</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>For Parents</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>For Educators</span>
+                                                    </a>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
+                                </div>
+                            </li>
+                            <!-- Get care -->
+                            <li class="nav-button has-dropdown">
+                                <a href="#" aria-expanded="false" aria-controls="GetCareDesktopDropdown">
+                                    <span class="nav-button-text">Get Care</span>
+                                    <i class="arrow down"></i>
+                                </a>
+                                <div id="GetCareDesktopDropdown">
 
                                 </div>
                             </li>
-                            <li>
-                                <a href="#" aria-expanded="false" aria-controls="LearnDesktopDropdown"><span>Get Care</span><i class="arrow down"></i></a>
+                            <!-- Get Involved -->
+                            <li class="get-involved-button nav-button has-dropdown">
+                                <a href="#" aria-expanded="false" aria-controls="LearnDesktopDropdown">
+                                    <span class="nav-button-text">Get Involved</span>
+                                    <i class="arrow down"></i></a>
                                 <div id="LearnDesktopDropdown"></div>
                             </li>
-                            <li class="get-involved-button">
-                                <a href="#" aria-expanded="false" aria-controls="LearnDesktopDropdown"><span>Get Involved</span><i class="arrow down"></i></a>
-                                <div id="LearnDesktopDropdown"></div>
+                            <!-- Donate -->
+                            <li class="nav-button">
+                                <a class="donate-button" href="#">
+                                    <span class="nav-button-text">Donate</span>
+                                </a>
                             </li>
-                            <li><a class="donate-button" href="#"><span>Donate</span></a></li>
-                            <li class="search-button"><a href="#" aria-expanded="false" aria-controls="SearchDesktopDropdown">
-                                <span class="search-span"><img class="search-icon" src="assets/searchwhite.png">Search</span></a></li>
+                            <!-- Search -->
+                            <li class="search-button nav-button">
+                                <a href="#" aria-expanded="false" aria-controls="SearchDesktopDropdown">
+                                    <span class="search-span nav-button-text"><img class="search-icon" src="assets/searchwhite.png">Search</span>
+                                </a>
+                            </li>
+                            <!-- End of Buttons -->
                         </ul>
+                        <!-- End of nav list -->
                     </nav>
+                    <!-- End of nav container -->
                 </div>
+                <!-- End of nav wrapper -->
             </div>
+            <!-- End of scrollbar wrapper -->
+
         </header>
         <div class="news-and-main-container">
             <div class="news-banner">
                 <div class="news-container">
                     <div class="news-article-container">
-                            <div class="h1-container">
-                                <h1>Supreme Court Allows States to Ban Abortion, Roe v. Wade Overturned</h1>
-                            </div>
-                            <p>Confused about new laws that change how and where you can get safe, legal abortion?  We're here for you.</p>
+                        <div class="h1-container">
+                            <h1>Supreme Court Allows States to Ban Abortion, Roe v. Wade Overturned</h1>
+                        </div>
+                        <p>Confused about new laws that change how and where you can get safe, legal abortion?  We're here for you.</p>
                     </div>
                     
                     <div class="button-container">
