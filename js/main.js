@@ -19,25 +19,22 @@ const deskDrop = document.querySelector('.learn-desktop-dropdown')
 
 
 
-// learnBtn.addEventListener('mouseout', ()=>menuOpen=false)
-learnBtn.addEventListener('mouseout', learnDesktopDropdownHide)
-learnBtn.addEventListener('mouseover', learnDesktopDropdownShow)
-// deskDrop.addEventListener('mouseover', learnDesktopDropdownShow)
+// learnBtn.addEventListener('mouseover', learnDesktopDropdownHide)
+// learnBtn.addEventListener('mouseout', learnDesktopDropdownShow)
+// deskDrop.addEventListener('mouseover', learnDesktopDropdownHide)
+// deskDrop.addEventListener('mouseout', learnDesktopDropdownShow)
 
 
 function learnDesktopDropdownShow(){
 
-    learnBtn.classList.add('open');
-    deskDrop.classList.remove('hidden')
-    // deskDrop.classList.add('repositioned')
-
+   //  learnBtn.classList.add('open');
+    deskDrop.classList.add('quick-transition');
+   //  deskDrop.classList.remove('quick-transition');
 }
 
 
 function learnDesktopDropdownHide(){
-    learnBtn.classList.remove('open');
-   //  deskDrop.classList.add('hidden')
-    main.classList.remove('repositioned')
+    deskDrop.classList.remove('quick-transition');
 }
 
 
