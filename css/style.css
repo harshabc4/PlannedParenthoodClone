@@ -113,6 +113,7 @@ ul {
   height: 100%;
 }
 
+
 .nav-button-text{
   
   font-weight: bold;
@@ -129,7 +130,9 @@ ul {
   color:#2895d5;
 }
 
-.has-dropdown:hover .arrow{
+
+
+/* .has-dropdown:hover .arrow{
   border: solid #2895d5;
   border-width: 0 3.5px 3.5px 0;
   transition: scale;
@@ -138,21 +141,12 @@ ul {
   transition: 0.3s;
 }
 
-/* @-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to { 
-    -webkit-transform: rotate(225deg);
-  }
-} */
-
 .has-dropdown:not(:hover) .arrow {
   transition: scale;
   transform: translate(0px, -0px) scale(-1,1) rotate(45deg);
   transition-timing-function: ease-in;
   transition: 0.3s;
-}
+} */
 
 
 ul li span {
@@ -395,19 +389,22 @@ transition: opacity 300ms ease-in-out, transform 300ms ease-in-out; */
 }
 
 .arrow {
-  font-size: 13px;
-  border: solid white;
-  border-width: 0 3.5px 3.5px 0;
-  display: inline-block;
-  padding: 0.25em;
-  margin-left: 0.5em;
-  position: relative;
-  top: -3px;
-}
+  
+  /* font-size: 13px; */
+  /* border: solid 1px white; */
 
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  /* font-size: 1px; */
+  /* color: white; */
+
+  /* height: 10px; */
+  /* width: 1px; */
+  /* border-width: 0 3.5px 3.5px 0; */
+  /* display: inline-block; */
+  /* padding: 0.25em;
+  margin-left: 0.5em; */
+  position: relative;
+  /* top: 50%; */
+  top: 3px;
 }
 
 
@@ -422,3 +419,62 @@ transition: opacity 300ms ease-in-out, transform 300ms ease-in-out; */
 
 
 
+/* test start */
+
+
+/* .active {
+  transition: 1s ease-in-out;
+  transform: translateY(100px);
+} */
+
+/* .arrow-container {
+width: 100%;
+display: flex;
+} */
+
+.arrow-container a{
+  /* display: block; */
+}
+
+.arrow::before, .arrow::after {
+  
+  content: '';
+  background-color: transparent;
+  color: black;
+  border-bottom: 12px solid white;
+  transition: transform 0.4s ease-in-out;
+  /* transition: transform 0s ease-in; */
+  display: inline-block;
+  height: 14px;
+  /* width: 12px; */
+  width: 4px;
+  /* position: absolute;
+  left: 0;
+  top: 0; */
+}
+
+.arrow::before {
+  transform: rotate(-135deg);
+}
+
+.arrow::after {
+  transform: rotate(135deg);
+}
+
+.has-dropdown:hover .arrow{
+  transform: rotate(0deg);
+}
+
+.has-dropdown:hover .arrow:before {
+  transform: rotate(-45deg);
+  border-color: #2895d5;
+}
+
+.has-dropdown:hover .arrow:after {
+  transform: rotate(45deg);
+  border-color: #2895d5;
+}
+
+
+
+/* test end */

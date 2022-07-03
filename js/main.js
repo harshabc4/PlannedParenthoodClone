@@ -16,6 +16,8 @@ window.addEventListener("scroll", () => {
 
 const learnBtn = document.querySelector('.learn-button');
 const deskDrop = document.querySelector('.learn-desktop-dropdown')
+const arrow = document.querySelector('.get-inv-arr')
+const getinv = document.querySelector('.get-involved-buttonzzz')
 
 
 
@@ -25,16 +27,19 @@ const deskDrop = document.querySelector('.learn-desktop-dropdown')
 // deskDrop.addEventListener('mouseout', learnDesktopDropdownShow)
 
 
+// getinv.addEventListener('mouseover', learnDesktopDropdownShow)
+// getinv.addEventListener('mouseover', learnDesktopDropdownShow)
+
 function learnDesktopDropdownShow(){
 
    //  learnBtn.classList.add('open');
-    deskDrop.classList.add('quick-transition');
+    arrow.classList.add('active');
    //  deskDrop.classList.remove('quick-transition');
 }
 
 
 function learnDesktopDropdownHide(){
-    deskDrop.classList.remove('quick-transition');
+   arrow.classList.add('active');
 }
 
 
