@@ -122,6 +122,10 @@ ul {
   text-transform: uppercase;
 }
 
+.has-dropdown {
+  margin-right: 8px;
+}
+
 .has-dropdown:hover {
   background: white;
 }
@@ -129,25 +133,6 @@ ul {
 .has-dropdown:hover *{
   color:#2895d5;
 }
-
-
-
-/* .has-dropdown:hover .arrow{
-  border: solid #2895d5;
-  border-width: 0 3.5px 3.5px 0;
-  transition: scale;
-  transform: translate(0px, 4px) scale(1,-1) rotate(45deg);
-  transition-timing-function: ease-in;
-  transition: 0.3s;
-}
-
-.has-dropdown:not(:hover) .arrow {
-  transition: scale;
-  transform: translate(0px, -0px) scale(-1,1) rotate(45deg);
-  transition-timing-function: ease-in;
-  transition: 0.3s;
-} */
-
 
 ul li span {
   padding-right: 2px;
@@ -238,7 +223,7 @@ h1 {
 .news-article-container p {
   line-height: 1.5;
   margin-top: 10px;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 1.22rem;
 }
 
@@ -264,6 +249,35 @@ text-align: center;
 /* ADDITIONAL STYLES
 /*******************************************/
 
+.main-img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  display: flex;
+  z-index: -1;
+  position: absolute;
+  top: -15px;
+}
+
+.main-content {
+  display: flex;
+  /* min-height: 10em; */
+  /* min-height: 1000px; */
+}
+
+.main-image-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  top: -200px;
+  /* right: auto;
+  bottom: auto; */
+  left: 200px;
+  overflow: hidden;
+
+}
+
+
 
 
 /******************************************
@@ -287,34 +301,17 @@ text-align: center;
  transform-origin: top;
  /* transition: transform 0.2s ease-out; */
  transition: transform 0s ease-in;
-
- /* opacity: 1; */
-
-/* 
- opacity: 0;
- transform: translateY(0px);
-transition: opacity 300ms ease-in-out, transform 300ms ease-in-out; */
-
- /* border: 1px solid black; */
 }
-
-/* .has-dropdown .learn-desktop-dropdown:not(:hover) {
-  opacity: 0;
-} */
 
 .no-opacity {
   opacity: 0;
 }
 
 .has-dropdown:hover .dropdown-menu{
-  /* opacity: 1;
-  transform: translateY(123px);
-  pointer-events: auto; */
   transform: scaleY(1);
 }
 
 .has-dropdown:hover .dropdown-menu{
-
   transition: transform 0.2s ease-out;
 }
 
@@ -388,23 +385,14 @@ transition: opacity 300ms ease-in-out, transform 300ms ease-in-out; */
   box-shadow: none;
 }
 
+.arrow-container {
+  margin-left: 5px;
+}
+
 .arrow {
-  
-  /* font-size: 13px; */
-  /* border: solid 1px white; */
-
-  /* font-size: 1px; */
-  /* color: white; */
-
-  /* height: 10px; */
-  /* width: 1px; */
-  /* border-width: 0 3.5px 3.5px 0; */
-  /* display: inline-block; */
-  /* padding: 0.25em;
-  margin-left: 0.5em; */
   position: relative;
-  /* top: 50%; */
-  top: 3px;
+  top: 5px;
+  left: 5px;
 }
 
 
@@ -417,37 +405,17 @@ transition: opacity 300ms ease-in-out, transform 300ms ease-in-out; */
   display: none;
 }
 
-
-
-/* test start */
-
-
-/* .active {
-  transition: 1s ease-in-out;
-  transform: translateY(100px);
-} */
-
-/* .arrow-container {
-width: 100%;
-display: flex;
-} */
-
-.arrow-container a{
-  /* display: block; */
-}
-
 .arrow::before, .arrow::after {
-  
   content: '';
   background-color: transparent;
   color: black;
-  border-bottom: 12px solid white;
-  transition: transform 0.4s ease-in-out;
+  border-bottom: 9px solid white;
+  transition: transform 0.2s ease-in-out;
   /* transition: transform 0s ease-in; */
   display: inline-block;
-  height: 14px;
+  height: 10px;
   /* width: 12px; */
-  width: 4px;
+  width: 2.5px;
   /* position: absolute;
   left: 0;
   top: 0; */
@@ -461,16 +429,25 @@ display: flex;
   transform: rotate(135deg);
 }
 
-.has-dropdown:hover .arrow{
-  transform: rotate(0deg);
-}
-
-.has-dropdown:hover .arrow:before {
+.has-dropdown:hover .arrow:before{
+  /* transform: rotate(-45deg) translateX(6px) translateY(-5px); */
   transform: rotate(-45deg);
   border-color: #2895d5;
 }
 
+.has-dropdown .arrow-container {
+    transform: translateY(0px);
+    transition: 0.2s ease-in-out;
+}
+
+.has-dropdown:hover .arrow-container{
+  transform: translateY(-8px);
+  transition: 0.2s ease-in-out;
+}
+
+
 .has-dropdown:hover .arrow:after {
+  /* transform: rotate(45deg) translateX(-6px) translateY(-5px); */
   transform: rotate(45deg);
   border-color: #2895d5;
 }

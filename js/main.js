@@ -14,15 +14,22 @@ window.addEventListener("scroll", () => {
    lastScrollY = window.scrollY;
 })
 
-const learnBtn = document.querySelector('.learn-button');
-const deskDrop = document.querySelector('.learn-desktop-dropdown')
-const arrow = document.querySelector('.get-inv-arr')
-const getinv = document.querySelector('.get-involved-buttonzzz')
+
+// const learnBtn = document.querySelector('.learn-button');
+
+// const allArrowContainers = document.querySelectorAll('.arrow-container')
+// allArrowContainers.forEach(el => el.querySelector())
+
+// const arrow = document.querySelector('.arrow-container')
+// const allDropDrownButtons = document.querySelectorAll('.has-dropdown')
+// allDropDrownButtons.forEach (el => el.addEventListener('mouseover', learnDesktopDropdownShow))
+// allDropDrownButtons.forEach (el => el.addEventListener('mouseout', learnDesktopDropdownHide))
 
 
 
-// learnBtn.addEventListener('mouseover', learnDesktopDropdownHide)
-// learnBtn.addEventListener('mouseout', learnDesktopDropdownShow)
+// learnBtn.addEventListener('mouseover', learnDesktopDropdownShow)
+// learnBtn.addEventListener('mouseout', learnDesktopDropdownHide)
+
 // deskDrop.addEventListener('mouseover', learnDesktopDropdownHide)
 // deskDrop.addEventListener('mouseout', learnDesktopDropdownShow)
 
@@ -33,13 +40,15 @@ const getinv = document.querySelector('.get-involved-buttonzzz')
 function learnDesktopDropdownShow(){
 
    //  learnBtn.classList.add('open');
-    arrow.classList.add('active');
+    arrow.classList.add('arrow-translate');
+    arrow.classList.remove('reverse-arrow-translate');
    //  deskDrop.classList.remove('quick-transition');
 }
 
 
 function learnDesktopDropdownHide(){
-   arrow.classList.add('active');
+   arrow.classList.add('reverse-arrow-translate');
+   arrow.classList.remove('arrow-translate');
 }
 
 
