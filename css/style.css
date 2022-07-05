@@ -31,9 +31,18 @@ a {
   color: white;
 }
 
+h1 {
+  margin-bottom: 20px;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+.header-wrapper {
+  background: white;
+  min-height: 10rem;
+}
 
 .language-bar-wrapper {
   background: white;
@@ -106,7 +115,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 12px 0px 11px;
+  padding: 0px 18px 0px 11px;
   height: 100%;
 }
 
@@ -134,8 +143,12 @@ ul li span {
 }
 
 .get-involved-button {
-  padding-right: 8px;
+  /* padding-right: 8px; */
   padding-left: 15px;
+}
+
+.donate-button-container {
+  /* padding-left: 0px; */
 }
 
 .donate-button {
@@ -172,6 +185,7 @@ ul li span {
 }
 
 .news-banner {
+  /* min-width: 100%; */
   padding: 40px 0;
   display: flex;
   background: #2895d5;
@@ -183,6 +197,10 @@ ul li span {
   width: 100%;
   display: flex;
   margin: 0 auto;
+}
+
+.news-header {
+  margin-bottom: 0px;
 }
 
 .news-article-container {
@@ -204,14 +222,19 @@ ul li span {
   background: #00286e;
 }
 
-h1 {
+h1,
+h2 {
   width: 35rem;
   font-size: 1.85rem;
   line-height: 2.25rem;
   font-weight: 900;
 }
 
-.h1-container {
+h2 {
+  margin-bottom: 20px;
+}
+
+.news-header-container {
   height: fit-content;
 }
 
@@ -240,10 +263,6 @@ h1 {
   text-align: center;
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
 .main-img {
   width: 100%;
   /* height: 100%; */
@@ -251,13 +270,65 @@ h1 {
   display: flex;
   z-index: -1;
   position: absolute;
-  top: -15px;
+  /* top: -15px; */
+  top: -80px;
+  right: 0px;
 }
 
 .main-content {
   display: flex;
+  align-items: center;
+  justify-content: center;
+
   /* min-height: 10em; */
   /* min-height: 1000px; */
+}
+
+.info-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  padding: 9rem 20px 0 20px;
+  /* min-width: 1200px; */
+}
+
+.info-1 h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  width: 50%;
+}
+
+.info-1 p {
+  /* display: flex; */
+  /* width: 50%; */
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: 200;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+  max-width: 95%;
+}
+
+.info-1 a {
+  width: 50%;
+  color: black;
+  font-weight: 200;
+  text-decoration: underline;
+}
+
+.p-wrapper {
+  width: 50%;
+}
+
+.main-info-wrapper {
+  position: relative;
+  min-width: 100vw;
+}
+
+.main-info-wrapper > * {
+  max-width: 1200px;
+  margin: auto;
 }
 
 .main-image-wrapper {
@@ -269,6 +340,55 @@ h1 {
   bottom: auto; */
   left: 200px;
   overflow: hidden;
+}
+
+.location-form {
+  display: flex;
+  width: 100%;
+  background: white;
+  padding: 20px 20px 24px 20px;
+}
+
+input {
+  display: flex;
+  margin-top: 10px;
+  width: 251.767px;
+  height: 50px;
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+}
+
+.search-filter {
+  margin-left: 10px;
+}
+
+.services-wrapper {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 8px;
+  width: 251.767px;
+  height: 48px;
+  border: 1px solid;
+  margin-top: 10px;
+}
+
+.health-center-header {
+  display: flex;
+}
+
+.info-2-wrapper {
+  margin-top: 6rem;
+  background: #2895d5;
+  height: 50rem;
+}
+
+input {
+  display: flex;
+  padding: 8px;
+  position: relative;
 }
 
 /******************************************
@@ -285,7 +405,7 @@ h1 {
   display: flex;
   min-width: 100vw;
   background: white;
-  min-height: 20rem;
+  /* min-height: 17rem; */
 
   transform: scaleY(0);
   transform-origin: top;
@@ -318,6 +438,7 @@ h1 {
   display: flex;
   width: 100%;
   max-width: 1200px;
+  padding-bottom: 6px;
 }
 
 .dropdown-ul {
@@ -325,8 +446,8 @@ h1 {
   flex-direction: column;
   columns: 2;
   font-size: 17.5px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  /* margin-top: 15px; */
+  /* margin-bottom: 15px; */
 }
 
 .dropdown-ul * {
@@ -341,16 +462,25 @@ h1 {
 
 .dropdown-container {
   width: 50%;
-  padding: 0 18px;
+  /* padding: 0px 18px 22px 18px; */
 }
 
 .dropdown-container * {
   color: #2895d5;
 }
 
-.get-care-span {
-  min-width: 100%;
+.dropdown-container li {
+  display: flex;
+}
+
+.full-width-dropdown-wrapper .dropdown-container h3 {
+  /* min-width: 100%; */
+  text-transform: uppercase;
   color: black;
+  font-weight: 400;
+  font-weight: bold;
+  font-size: 0.75rem;
+  margin-bottom: 20px;
 }
 
 /******************************************
@@ -359,7 +489,7 @@ h1 {
 
 .scroll-bar {
   z-index: 1000;
-  transition: transform 0.5s;
+  transition: transform 0.3s;
   transition-timing-function: ease-out;
   position: fixed;
   width: 100%;
